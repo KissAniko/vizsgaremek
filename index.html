@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <title>Kalóriaszámláló</title>
+</head>
+<body>  
+    <form>
+      <div class="regisztracios_sor">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required> <!-- required = kötelező kitöltendő ablak!-->      
+          <label for="password">Jelszó:</label>
+          <input type="password" id="password" name="password" required>  
+        
+    <button type="bejelentkezes">Bejelentkezés</button>
+    <button  onclick="regisztracio()" title="Regisztráció">Regisztráció</button>    
+    <button  onclick="jelszo()" title="Jelszó">Elfelejtett jelszó</button>  
+  </div>
+</form>
+    <hr>
+      <div class = "Kalória-Boom">Kalória-Boom </div>
+    <hr>           
+    <!-- A kövi sorokban jelenleg gombok vannak, de majd lenyíló ablakok lesznek-->
+    <div class="lenyilo_ablakok">
+    <button onclick="rolunk()" >Rólunk</button>
+    <button onclick="kalkulator()" >Kalkulátor</button>
+    <button onclick="kaloriatablazat()" >Kalóriatáblázat</button>
+    <button onclick="informacio()" >Információk</button>
+    <button onclick="forum()" >Fórum</button>
+    </div> 
+    <br> 
+<div class = "container">
+  <div class = "row">
+    <div class = "col">  
+      <h2>Mitől van az elhízás?</h2>    
+      <br>       
+       <p>Az elmúlt évtizedek statisztikája szerint, a társadalom súlygyarapodása fokozódott, aminek számtalan oka lehet. Rendszertelen életmód, helytelen táplálkozás, kevés mozgás, sok munka, időhiány, stressz, és az elmaradhatatlan gyorskajáldák, amik ételeiről csak annyit tudunk, finomak. Illetve ott vannak a finomított élelmiszerek, amelyek jóízűek, úgy tűnik táplálóak, látszólag örömöt okoznak, miközben észre se vesszük, hogy mennyi kárt okoznak..</p>
+       <p> Az ilyen "élelmiszer" mivel figyelmen kívül hagyja a kalóriamennyiséget és az egészséget, így a felhalmozódott cukor és zsír következtében a szervezet belső egyensúlya felborul, azután a test elhízik és megbetegszik. Mi pedig értetlenül állunk azelőtt, hogy történhetett mindez. Jobb esetbe elgondolkodunk ezen, aztán megpróbálunk tenne valamit ellene. A fogyókúrázók azonban rendszerint beleesnek az alább felsorolt hibákba.</p>  
+    </div>
+      <div class = "col">Második oszlop
+      </div>
+  </div>
+</div>
+<br>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class = "container">
+  <div class = "row">    
+      <div class = "col">Első oszlop</div>
+
+      <div class = "col">  
+        <h2>Mit ne tegyünk!</h2>
+        <p>Számtalan oldal áll rendelkezésünkre, hogy megtaláljuk a fogyásra alkalmas módszerünket. Azonban vannak olyan pénzhajhászok, akik gyors fogyást ígérve olyanokat ajánlanak, amik amellett, hogy nem működnek, még ártanak is. Vegyük figyelembe, hogy mennyi a normális idő és fogyás aránya, ami természetes úton, betegség nélkül elérhető.</p>
+
+        <h2>Jojó-effektus</h2>
+        <p> Ha ezt nem megfelelő módon kezeljük, beáll a jojó-effektus, hisz a szervezet egy hirtelen fogyást egész másképp érzékel. Ugyan a test veszít a súlyából, de beindul egy védekezési mechanizmus, ami arra ösztönzi a szervezetet, ha több energiához jut, azt szigorúan raktározza. Ennek következtében amellett, hogy visszajön a súly, csalódottságunkat az is tetőzi, hogy még többet nyom a mérleg, mint azelőtt, hogy nekiláttunk a fogyókúrának.  </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+<br>
+<div class = "container">
+  <div class = "row">    
+      <div class = "col-md-12">
+        <h2>A hirtelen fogyás következménye</h2>
+        <p> Az ajánlott fogyás mértéke maximum 1kg/hét ajánlott, ami nem terheli meg a szervezetet és nem nyúlik meg csúnyán a bőr. A gyors fogyás következtében a bőrön striák alakulhatnak ki. Ezek a csíkszerű, hegesedésnek tűnő felületek esztétikailag csúnyák és többnyire egy életre ott maradnak. Halványítani lehet őket, amiknek a kezelése nem túl olcsó, de eltűnni sajnos akkor sem fognak.</p>
+
+        <h2>Koplalás</h2>
+        <p>A koplalás szintén nem célravezető, hisz fogyásnál az izomzatból kezdünk a leghamarabb veszíteni. A felhalmozódott zsírt pedig csak akkor használja a szervezet, mikor már nincs mihez nyúlni. Azonban ennél a fázisnál már rendszerint jelentkezik a rosszullét, szédülés, fejfájás vagy hányinger. </p>
+
+         <h2>Súlyosabb következményei</h2>
+         <p>Arra is ügyelnünk kell, hogy mivel a megváltozott körülmények minden szempontból hatással vannak ránk, ezért egy rosszul megválasztott módszer akár végzetes is lehet. Például cukorbetegség kialakulása, pajzsmirigy megbetegedése és sok más olyan tűnet, amelyek kialakulásával részleges vagy állandó további gyógyszeres kezelésekre kényszeríti az embert.</p>
+         </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+        <br>          
+<div class = "container">
+  <div class = "row">    
+    <div class = "col">Első oszlop</div> 
+
+    <div class = "col">
+        <h2>Amire érdemes figyelnünk!</h2>
+        <br>
+        <h3>Mozgás</h3>
+         <p>A fogyókúra tekintetében csak 20-30 %-ot tesz ki, mégis azért fontos, mert ez felel az oxigénellátásért, ami elengedhetetlen sejtjeink normális működéséhez. Akinek munkája, ideje vagy többletsúlya nem engedi meg az aktív mozgást, akkor is fontos, hogy  minimum 30 perc/nap mozgást beépítsen a napi rutinjába. Legyen ez gyaloglás, lassú kocogás, vagy egy egyszerű torna és ezek felváltva, amely beindítja a tiszta oxigént szállító vérkeringést. Különben semmilyen pozitív hatást nem fog elérni, még akkor sem, ha csodabogyókat eszik vagy csodateákat iszik.   </p>
+        <h2>Egyéb fontos tényezők</h2>
+         <p>Fogyókúránk további elemi a kalóribevitel, a vitaminok, ásványianyagok és a folyadékbevitel. Ez utóbbi minimum 2 liter/nap az ajánlott mennyiség, ami a vízháztartásban és méregtelenítésben játszik fontos szerepet. A folyadék NEM cukros és NEM szénsavas italokból áll,  hanem fontos, hogy tiszta víz legyen. </p>
+    </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+<br>
+<h2>Összegezve:</h2>
+        <p>Ha valaki komolyan veszi, átalakítja a napi szokásait, étrendjét, életvitelét és kitartóan követi a kitűzött célt, akkor egész biztos, hogy egy maradandó eredményt fog elérni. A testünk szinte önálló életre fog kelni. Egy idő után azt vesszük észre, hogy akkor is fogyunk, mikor épp nem figyelünk rá. A szervezet egyensúlyba kerül és számunkra beállítja a legoptimálisabb testsúlyt, amit a későbbeikeben is szinten tart. Ezzel egyidőben megszépül a köröm, a haj és a bőr egyaránt, illetve megszűnik a jojó-effektus és sokkal egészségesebbek leszünk. Mi megadjuk a testünknek azt amire szüksége van, ő pedig cserébe visszaadja azt a csodás, megfiatalodott és ideális külsőt, amire vágyunk.</p> 
+      </div>
+      <div class = "col">
+        Második oszlop
+      </div>
+  </div>
+</div>
+  
+</body>
+</html>
