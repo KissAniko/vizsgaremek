@@ -1,0 +1,49 @@
+
+
+body{
+                background-color: rgb(166, 196, 166);
+            }
+            
+            #test, #mag, #eletkor, #fizikaiakt{
+              width:110px;
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 15px;
+            }
+            
+            p, h2, h3, pre, li{
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 18px;
+              
+            }
+            
+             #tomeg, #magas, #elet, #eredmenyDoboz{
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 18px;
+            }
+            
+            #szamitas{
+              position: relative;
+              background-color: #075b3b;
+              border: none;
+              font-size: 18px;
+              color: #FFFFFF;
+              padding: 10px;
+              width: 200px;
+              text-align: center;
+              -webkit-transition-duration: 0.4s; /* Safari */
+              transition-duration: 0.4s;
+              text-decoration: none;
+              overflow: hidden;
+              font-family:Lucida;
+              font-style: italic;
+            }
+            
+                 
+            #eredmenyDoboz{
+              padding:20px;
+            }
+            
+            

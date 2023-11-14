@@ -1,0 +1,118 @@
+body{
+                background-color: rgb(166, 196, 166);
+            }
+            
+            #test, #mag, #eletkor, #fizikaiakt{
+              width:110px;
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 15px;
+            }
+            
+            #no, #ferfi{
+              caret-color: transparent;
+            }
+            p, pre, h3{
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 18px;
+                   
+            }
+            h2{
+              font-family:Lucida;
+              font-style: italic;
+            }
+            h4{
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 20px;
+            }
+            
+            
+             #tomeg, #magas, #elet, #eredmenyDoboz, #alsoszoveg{
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 18px;
+            }
+            
+            #szamitas{
+              position: relative;
+              background-color: #075b3b;
+              border: none;
+              font-size: 18px;
+              color: #FFFFFF;
+              padding: 10px;
+              width: 200px;
+              text-align: center;
+              -webkit-transition-duration: 0.4s; /* Safari */
+              transition-duration: 0.4s;
+              text-decoration: none;
+              overflow: hidden;
+              font-family:Lucida;
+              font-style: italic;
+            }
+            
+            #szamitas:after {
+              content: "";
+              background: #566656;
+              display: block;
+              position: absolute;
+              padding-top: 300%;
+              padding-left: 350%;
+              margin-left: -20px!important;
+              margin-top: -120%;
+              opacity: 0;
+              transition: all 2.5s
+            }
+            
+            #szamitas:active:after {
+              padding: 0;
+              margin: 0;
+              opacity: 5;
+              transition: 0s
+            }
+              
+            .szamitas{
+              margin: 0px 50px;
+            }
+                
+            .dropbtn {
+              font-family:Lucida;
+              font-style: italic;
+              font-size: 18px;
+              color: white;
+              padding: 10px;
+              border: none;    
+            }
+                     
+            
+            .dropbtn{
+              background-color: #075b3b;
+            }
+                 
+              
+            #tartalom{
+              font-family:Lucida;
+              font-style: italic;
+              font-size:15px;
+              padding: 5px;
+              border:none;
+              background-color: #075b3b;
+              color:#FFFFFF;
+            }
+            
+            #valasztottEletmod{
+              display: none;
+            } 
+            #eredmenyDoboz{
+              padding:20px;
+            }
+            #legordulo, #tartalom{
+              width:200px;
+              height:50px;
+            }
+            
+            
+            
+            
+            

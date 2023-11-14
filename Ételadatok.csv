@@ -1,0 +1,256 @@
+Árpa (főtt),123,gabona
+Barna rizs,362,gabona
+Barna rizs (főtt),342,gabona
+Bulgur,83,gabona
+Árpaliszt,345,gabona
+Bulgur (főtt),364,gabona
+Durumliszt,360,gabona
+Fehér rizs,130,gabona
+Fehér rizs (főtt),343,gabona
+Hajdina,92,gabona
+Hajdina (főtt),320,gabona
+Jázmin rizs,103,gabona
+Jázmin rizs (főtt),103,gabona
+Köles,378,gabona
+Köles (főtt),119,gabona
+Kukoricaliszt,370,gabona
+Liszt,337,gabona
+Rozsliszt,349,gabona
+Zabkorpa,246,gabona
+Zabkorpa (főtt),40,gabona
+Bárány,282,allati
+Béka,73,allati
+Bivaly,99,allati
+Csirke,119,allati
+Fácán,133,allati
+Galamb,142,allati
+Halak,70-140 között,allati
+Jávorszarvas,102,allati
+Juh,282,allati
+Kacsa,135,allati
+Kecske,109,allati
+Liba,161,allati
+Medve,160,allati
+Mókus,120,allati
+Őz,120,allati
+Pulyka,114,allati
+Sertéshús (sovány),121,allati
+Sertéshús (közepesen zsíros),218,allati
+Sertéshús (zsíros),263,allati
+Tenger gyümölcsei,80-90 között,allati
+Vaddisznó,122,allati
+Vadkacsa,123,allati
+Vadnyúl,114,allati
+Durumtészta,158,teszta
+Kukoricatészta (száraz),357,teszta
+Kukoricatészta (főtt),126,teszta
+Kuszkusz (száraz),376,teszta
+Kuszkusz (főtt),112,teszta
+Leveles tészta,423,teszta
+Rizstészta (száraz),364,teszta
+Rizstészta (főtt),108,teszta
+Teljes kiőrlésű tészta (száraz),352,teszta
+Teljes kiőrlésű tészta (főtt),149,teszta
+Üvegtészta (száraz),351,teszta
+Üvegtészta (főtt),200,teszta
+4 tojásos száraztészták (száraz),380,teszta
+4 tojásos száraztészták (főtt),140,teszta
+Burgonya kenyér,266,pekaru
+Fehér kenyér,267,pekaru
+Félbarna kenyér,246,pekaru
+Francia kenyér,289,pekaru
+Graham kenyér,272,pekaru
+Kukoricás kenyér,266,pekaru
+Rozskenyér,259,pekaru
+Teljes kiőrlésű kenyér,252,pekaru
+Diós péksütik,386,pekaru
+Kakaós péksütik,494,pekaru
+Lekváros péksütik,322,pekaru
+Mákos péksütik,386,pekaru
+Túrós péksütik,310,pekaru
+"Sós zsemle, kifli",280,pekaru
+Magvas,288,pekaru
+Sajtos,389,pekaru
+Pizzás,230,pekaru
+Vajas kifli,430,pekaru
+Kalács,326,pekaru
+Briós,346,pekaru
+Fánk,271,pekaru
+Palacsinta,232,pekaru
+Pogácsa,430,pekaru
+Pirítós,389,pekaru
+Piskóta,374,pekaru
+Babapiskóta,380,pekaru
+Paradicsom,18,zoldseg
+Paprika,27,zoldseg
+Uborka,15,zoldseg
+Saláta,17,zoldseg
+Hagyma,32,zoldseg
+Cékla,43,zoldseg
+Sárgarépa,41,zoldseg
+Petrezselyem,55,zoldseg
+Bab,110,zoldseg
+Kukorica,80,zoldseg
+Brokkoli,34,zoldseg
+Burgonya,77,zoldseg
+Cukkini,17,zoldseg
+Padlizsán,25,zoldseg
+Zöldborsó,84,zoldseg
+Zölhüvelyű bab,112,zoldseg
+Tarkabab,353,zoldseg
+Kelbimbo,43,zoldseg
+Gomba,22-38 között,zoldseg
+Sóska,22,zoldseg
+Fejes káposzta,25,zoldseg
+Főzőtök,31,zoldseg
+Spenot,29,zoldseg
+Savanyúságfélék ,11-28 között,zoldseg
+Alma,52,gyumolcs
+Körte,57,gyumolcs
+Szilva,46,gyumolcs
+Szőlő,69,gyumolcs
+Fekete dió,619,gyumolcs
+Meggy,50,gyumolcs
+Málna,52,gyumolcs
+Eper,32,gyumolcs
+Egres,44,gyumolcs
+Ribizli,56,gyumolcs
+Görögdinnye,30,gyumolcs
+Sárgadinnye,34,gyumolcs
+Barack,39,gyumolcs
+Banán,89,gyumolcs
+Mangó,60,gyumolcs
+Licsi,66,gyumolcs
+Kivi,61,gyumolcs
+Avokádó,160,gyumolcs
+Ananász,50,gyumolcs
+Kókuszdióbél,354,gyumolcs
+Kókusz reszelt,592,gyumolcs
+Citrom,29,gyumolcs
+Narancs,47,gyumolcs
+Mandarin,53,gyumolcs
+Grapefruit,39,gyumolcs
+Gránátalma,83,gyumolcs
+Papaya,43,gyumolcs
+Áfonya,46,gyumolcs
+Szeder,43,gyumolcs
+Csipkebogyó,162,gyumolcs
+Dzsemek,237-295 között,gyumolcs
+Aszalt gyümölcs,232-308 között,gyumolcs
+Tehéntej 2.8%-os,56,tejtermek
+Tej 1.5%-os,44,tejtermek
+Aludttej,59,tejtermek
+Kecsketej,69,tejtermek
+Tejpor zsíros,411,tejtermek
+Tejpor sovány,95,tejteremk
+Tejszínhab,257,tejtermek
+Főzőtejszin,208,tejtermek
+Kávétejszin,120,tejtermek
+Tehéntúró félzsíros,137,tejtermek
+Tehéntúró sovány,95,tejtermek
+Juhtúró,270,tejtermek
+Gomolyatúró,276,
+Vajkrém,385,tejtermek
+Tejföl 20%-os,207,tejtermek
+ Tejföl 12%-os,135,tejtermek
+Krémsajt,160,tejtermek
+Kéksajt,353,tejtermek
+Trappista sajt,352,tejtermek
+Juhsajt,357,tejtermek
+Kecskesajt,364,tejtermek
+Camembert sajt,300,tejtermek
+Parenyica sajt,283,tejtermek
+Márványsajt,353,tejtermek
+Mascarpone sajt,420,tejtermek
+Mozzarella sajt,300,tejtermek
+Pálpusztai sajt ,293,tejtermek
+Gouda sajt,356,tejtermek
+Juhsajt,357,tejtermek
+Feta sajt,264,tejtermek
+Brie sajt,334,tejtermek
+Cheddar sajt,404,tejtermek
+Ricotta sajt,174,tejtermek
+Vaj,742,tejtermek
+Sűrített tej,321,tejtermek
+Túró rudi,357,tejtermek
+Jégkrém,197,tejtermek
+Fagylalt,207,tejtermek
+Puding,142,tejtermek
+Joghurt,57,tejtermek
+Kefír,55,tejtermek
+Körözött,184,tejtermek
+Mogyoró,567,mag
+Dió,654,mag
+Mák,525,mag
+Pisztácia,572,mag
+Gesztenye sült,245,mag
+Napraforgó,584,mag
+Kesudió,557,mag
+Mandula,579,mag
+Tökmag,574,mag
+Lenmag,534,mag
+Szezámmag,573,mag
+Fókaolaj,899,zsirolaj
+Halolaj,902,zsirolaj
+Napraforgóolaj,880,zsirolaj
+Szűz olivaolaj,900,zsirolaj
+Kakaóvaj,884,zsirolaj
+Olivaolaj,884,zsirolaj
+Szőlőmagolaj,884,zsirolaj
+Kókuszdióolaj,892,zsirolaj
+Kacsazsír,882,zsirolaj
+Libazsír,900,zsirolaj
+Sertészsír,902,zsirolaj
+Pálmaolaj,884,zsirolaj
+Mogyoróolaj,884,zsirolaj
+Kukoricaolaj,900,zsirolaj
+Margarin 60%-os,526,zsirolaj
+Repceolaj,891,zsirolaj
+Tea,45,udito
+Víz,0,udito
+Szénsavas víz,0,udito
+Ízesített víz,35,udito
+Szénsavas üdítők,42-45 között,udito
+Coca-cola light,0,udito
+Gyümölcslé 100%-os,58,udito
+Gyümölcslé 50%-os,45,udito
+Gyümölcslé 12%-os,33,udito
+Sör,43,alkoholos
+Vörösbor,85,alkoholos
+Fehérbor,82,alkoholos
+Tequila,110,alkoholos
+Aszú,116,alkoholos
+Konyak,217,alkoholos
+Pezsgő,65,alkoholos
+Whisky,250,alkoholos
+Vodka,231,alkoholos
+Pálinka,260,alkoholos
+Gin,263,alkoholos
+Likőr,336,alkoholos
+Párizsi,130,huskeszitm
+Virsli,190,huskeszitm
+F.kolbász,316,huskeszitm
+Főzőkolbász,301,huskeszitm
+Krinolin,206,huskeszitm
+Gépsonka,88,huskeszitm
+Löncshús,176,huskeszitm
+Téliszalámi,524,huskeszitm
+Túrista,372,huskeszitm
+Olasz felv.,251,huskeszitm
+Zala felv.,218,huskeszitm
+Sötő kolbász,346,huskeszitm
+Húskenyér,303,huskeszitm
+Zsírszalonna,520,huskeszitm
+Angolszal.,240,huskeszitm
+Császárszal.,367,huskeszitm
+Kacsamájas,282,huskeszitm
+Libamájas,194,huskeszitm
+Disznósajt,249,huskeszitm
+Tavaszi felv.,209,huskeszitm
+Veronai felv.,288,huskeszitm
+Májas hurka,379,huskeszitm
+Véreshurka,250,huskeszitm
+Papr.szalámi,520,huskeszitm
+Füst.Tarja,236,huskeszitm
+Pukyasonka,111,huskeszitm
+Sertésmájas,237,huskeszitm

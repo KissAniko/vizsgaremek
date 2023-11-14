@@ -1,0 +1,230 @@
+.boom{
+  width: 115px;
+  height: 115px;
+  margin:30px -10px 0px 0px; /* Tetszőleges margó a körök között */  
+  float:left; /* A bal oldalon történő lebegés */
+}
+
+.body1, .body2{  
+  justify-content: center;
+  align-items: center;
+  /* width: 80vw; */
+  /* min-height: 100vh; */
+}
+
+.body1{
+  margin-top:-15px;
+  margin-left:-15px;
+}
+
+.smiley-tarolo1, .smiley-tarolo2{
+  width: 100px;
+  height: 100px;
+  /*border-bottom: 2px solid black;*/
+  position:relative;
+  margin:20px;      
+}
+
+.smiley.tarolo1{
+  margin: 20px;
+}
+
+.smiley-tarolo2{ 
+  margin:5px;       
+}
+
+.fej1, .fej2{
+  justify-content: center; 
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #16201c;
+}
+
+.szem1-1, .szem1-2, .szem2-1, .szem2-2{
+  justify-content: center; 
+  position:absolute;                
+  width:18px;
+  height:25px;
+  background-color: White;
+  border-radius: 50%;  
+}
+
+.szem1-1{
+  transform: rotate(-15deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:25px;
+  top:35px;
+}
+
+.szem1-2{  
+  transform: rotate(-25deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:55px;
+  top:23px;
+}
+.szem2-1{
+  transform: rotate(15deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:25px;
+  top:25px;
+}
+
+.szem2-2{
+  transform: rotate(5deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:58px;
+  top:30px;
+}
+
+.szemgolyo1-1, .szemgolyo1-2, .szemgolyo2-1, .szemgolyo2-2{
+  justify-content: center; 
+  position:absolute;              
+  width:12px;
+  height:15px;
+  background-color:#355348;
+  border-radius: 50%; 
+}
+
+.szemgolyo1-1{
+  transform: rotate(-15deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:32px;
+  top:40px;
+}
+
+.szemgolyo1-2{  
+  left:54px;
+  top:29px;
+  transform: rotate(-15deg); /* Elforgatás 15 fokban másik irány (\\\)*/    
+}
+
+.szemgolyo2-1{  
+  transform: rotate(15deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+  left:30px;
+  top:34px;
+}
+
+.szemgolyo2-2{  
+  left:57px;
+  top:38px;
+  transform: rotate(15deg); /* Elforgatás 15 fokban másik irány (\\\)*/    
+}
+
+/*.szem:nth-child(2){
+  left: 160px;
+}  */
+
+.szaj1{
+  justify-content: center; 
+  position:absolute;
+  width:5px; 
+  /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+   border-radius: 50%;  
+  border-bottom:35px solid white;
+  transform: rotate(55deg); /* Elforgatás 55 fokban ((\\\))*/
+  left:64px;
+  top:56px;  
+}
+
+.gorbeszaj1-1{
+  position:absolute;
+  width:8px;                  
+  border-radius: 50%;
+  border-bottom:17px solid #16201c;
+  transform: rotate(50deg); /* Elforgatás 15 fokban (///)*/
+  left:56px;
+  top:74px;  
+}
+
+.gorbeszaj1-2{ 
+  position:absolute;
+  width:8px;                  
+  border-radius: 50%;
+  border-bottom:15px solid #16201c;
+  transform: rotate(50deg); /* Elforgatás 15 fokban (///)*/
+  left:60px;
+  top:63px;  
+}
+
+.gorbeszaj1-3{
+  position:absolute;
+  width:8px;                  
+  border-radius: 50%;
+  border-bottom:17px solid #16201c;
+  transform: rotate(50deg); /* Elforgatás 15 fokban (///)*/
+  left:72px;
+  top: 62.5px;  
+}
+
+.szaj2{
+  position:absolute;
+  width:25px;                
+  /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+  border-radius: 50%;
+  border-bottom:40px solid white;
+  transform: rotate(-80deg); /* Elforgatás 15 fokban (///)*/
+  left:35px;
+  top:50px;
+}
+
+.szaj2-2{
+  position:absolute;                
+  width:25px;
+  height:43px;
+  background-color:#16201c;
+  border-radius:50%;
+  left:34px;
+  top:43px;
+  transform: rotate(-75deg); /* Elforgatás 15 fokban */
+}
+
+.kanoc1, .kanoc2{
+  position:absolute;
+  width:7px;                
+  /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+  border-radius: 20%;
+  border-bottom:40px solid rgb(80, 58, 28); 
+}
+.kanoc1{
+  transform: rotate(-36deg); /* Elforgatás 15 fokban (///)*/
+  left:5px;
+  top:-30px;
+}
+
+.kanoc2{
+  transform: rotate(40deg); /* Elforgatás 15 fokban (///)*/
+  left:70px;
+  top:-40px;
+}
+
+.kanocto1, .kanocto2{
+  position:absolute;
+  width:30px;                
+  /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+  border-radius: 50%;
+  border-bottom:20px solid #16201c;
+  transform: rotate(-30deg); /* Elforgatás 15 fokban (///)*/
+  left:5px;
+  top:-1px;
+}
+
+.kanocto1{
+  transform: rotate(-30deg); /* Elforgatás 15 fokban (///)*/
+  left:5px;
+  top:-1px;
+}
+
+.kanocto2{  
+  transform: rotate(15deg); /* Elforgatás 15 fokban (///)*/
+  left:45px;
+  top:-10px;
+}
+
+.csillag1{
+  position: relative;
+  justify-content: center;
+  font-size: 400px;
+  left:-43px;
+  top:-148px;
+}
+  
+/* ------------------------------------------------------- */
+

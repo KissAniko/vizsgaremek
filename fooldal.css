@@ -1,0 +1,76 @@
+
+.oszlop-1{
+                text-align: justify;
+            }
+            .Kalória-Boom{
+                text-align: center;
+            }
+            body{
+                padding: 10px;
+                background-color:  rgb(166, 196, 166);
+                font-family:Lucida;
+                font-style: italic;
+                font-size: 18px;
+            }
+          
+            
+            .regisztracios_sor{
+                text-align: right;
+            }
+            
+            button{
+                color:white;
+                background-color: rgb(42, 56, 42);
+                font-family:Lucida;
+                font-style: italic;
+                font-size: 16px;
+                width:140px;  
+                margin: 5px;  
+            }
+            
+              .betuk {                  
+                display: flex; /* Flexbox elrendezés használata */
+                font-size: 110px;
+                font-family:Lucida;
+                font-style: italic;
+                justify-content: center; /* Szöveg vízszintesen középre igazítása */
+               /* align-items: center;  Szöveg függőlegesen középre igazítása 
+                width: 100%; /* A tartalom teljes szélessége 
+                height: 100vh; /* teljes ablakmagasság (viewport height) */
+                letter-spacing: 5px; /* Betűk közötti távolság növelése */
+                background: linear-gradient(to top, rgb(0, 0, 0), rgb(104, 178, 104));
+                -webkit-background-clip: text; /* Háttér-kihagyás a betűk számára */
+                color: transparent; /* Betűszín átlátszóvá tétele */
+                font-weight: bold; /* Betűvastagság növelése */           
+              }
+            
+            .menuk{
+                text-align:center;   
+               
+            }
+            
+            /* ezzel jelenik meg a legördülő ablak*/
+            /* .menuk:hover .content {                         
+              display: block;
+            } */
+            
+            .content {                                        /* legördült ablak stílusa*/
+                display: none;
+                position: absolute;
+                background-color: #fff;
+               /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+               /* z-index: 1;*/
+            }
+            .content a {
+                color: white;
+                padding: 0px 30px;
+                text-decoration: none;                        /* leveszi a linkekről az aláhúzást */  
+                display: block;
+                background-color: rgb(42, 56, 42);
+              }
+              
+              .content a:hover {background-color: #274d45}  /* a legördült ablakokban kijelölt elemek  szine megváltozik*/
+              
+            
+            
+            

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="BMR szuk.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="BMR szuk.js"></script>
+    <title>BMR minimális szükséglet</title>
+</head>
+<body style="background-color: rgb(166, 196, 166)">
+    <div class = "container">
+        <div class = "row">
+          <div class = col-sm-3></div>
+            <div class = col-sm-6>
+      <br><br>
+              <h2><b><u>Mennyi a napi minimális BMR-d?</u></b></h2>
+              <br>
+                <p>
+                  A minimális kalóriabevitel kiszámításával könnyebb nyomon követni az étkezés mértékét. Itt kiszámolhatod azt a mennyiséget, amit mindeképp be kell vinned a szervezetedbe még akkor is, ha átlagon felüli sebességgel szeretnél megszabadulni a fölösleges kilóktól.  </p>
+              
+                  <br>
+                  <p>Diéta tekintetében mindenképp fontos, hogy mit és mennyit eszel, de ezen kívül más dolgokra is felhívjuk a figyelmed, amit [itt] olvashatsz el, ha még nem tetted meg. </p>
+                 <br>
+                 <hr>
+            <p><b>Minimális kalóribeviteled a következő:</b></p>
+                
+                
+                <br>
+                <button  id = "no"  onclick="setNem('no')" <span style='font-size:15px;'>&#128105;</span> </button>  
+                <button  id = "ferfi" onclick="setNem('ferfi')" <span style='font-size:15px;'>&#128104;</span> </button>        
+                <br><br>
+                <label for="testtomeg" id = "tomeg">(Beírható érték 120 - 220 között)</label>              
+                <input type="number" id = "test"  placeholder = "Testtömeg /kg" min = "40" max = "150" >  <br><br> <!-- placeholder = helyőrző szöveg -->
+                <label for="magassag" id = "magas">(Beírható érték  40 - 150 között)</label>          
+                <input type="number" id = "mag"   placeholder = "Magasság /cm" min = "100" max = "220">  <br><br> 
+                <label for="eletkor" id = "elet">(Beírható érték  18 - 100 között)</label> 
+                <input type="number" id = "eletkor" placeholder = "Életkor /év" min = "18" max = "100"> <br><br>              
+            <hr>
+      <br>
+            </div>
+          <div class = col-sm-3></div>   
+        </div>
+      </div>          
+      
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-sm-6">
+             
+          </div>
+          <br><br>
+          <div class = "col-sm-6">        
+                <button onclick = "bmrSzamitas()" id = "szamitas" class = "szamitas">Minimális BMR-d: </button>
+                 
+                <p id = "noBmr"></p>   
+                <p id = "ferfiBmr"></p> 
+                 <textarea id="eredmenyDoboz" rows="1" cols="35" readonly></textarea> 
+                 <br>
+                 <br>
+
+                 <button onclick = "timeSzamitas()" id = "timeszamitas" class = "timeszamitas">Ennyi dő kell a kívánt súly eléréséhez: </button>
+                
+          </div>
+               <hr> 
+               
+      <br><br>
+          
+                 <div id = "alsoSzoveg">
+                    <p>[Ide] kattintva  meg tudod nézni az élelmiszerek  kalóriatartalmát.</p>                    
+                    <p>Vissza a főoldalra [itt]</p>
+                    
+                </div>
+        </div>
+      </div>  
+      
+<br><br>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <br><br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src = BMR.js></script> 
+    <script src = BMR_idoScript.js></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="BMR.CSS">
+    <title>BMR számláló</title>
+</head>
+<body>
+    
+
+<div class = "container">
+  <div class = "row">
+    <div class = col-sm-3></div>
+      <div class = col-sm-6>
+
+        <h2><b><u>Mi a BMR?</u></b></h2>
+        <br>
+          <p>A BMR, vagyis a Basal Metabolic Rate alapanyagcserét jelent. Ezen az oldalon kiszámolhatod, azt az  energiamennyiséget  vagyis kalóriát,  amit a szervezet pihenés 
+       (tehát mindenfajta fizikai megterhelés nélkül) közben az élettani funkcióinak fenntartása miatt éget el. Ez a mennyiség teszi ki a 
+       napi kalóriaszükségletünk 60-70%-át.</p>
+       <p>Továbbá azt is megtudhatod, miután beírtad a leadni kívánt kiló mennyiségét, hogy mennyi idő alatt tudsz tőle  megszabadulni  normál körülmények és fogyókúra esetén. </p>
+
+       <h4><p><b>Adatok:</b></p></h4>
+          <br>
+         
+          <button  id = "no"  onclick="setNem('no')" <span style='font-size:15px;'>&#128105;</span> </button>  
+          <button  id = "ferfi" onclick="setNem('ferfi')" <span style='font-size:15px;'>&#128104;</span> </button>
+             
+          <br><br>
+          <label for="testtomeg" id = "tomeg">(Beírható érték 120 - 220 között)</label>              
+          <input type="number"   id = "test"  placeholder = "Testtömeg /kg" min = "40" max = "150" >  <br><br> <!-- placeholder = helyőrző szöveg -->
+          <label for="magassag"  id = "magas">(Beírható érték  40 - 150 között)</label>          
+          <input type="number"   id = "mag"   placeholder = "Magasság /cm" min = "100" max = "220">  <br><br> 
+          <label for="eletkor"   id = "elet">(Beírható érték  18 - 100 között)</label> 
+          <input type="number"   id = "eletkor" placeholder = "Életkor /év" min = "18" max = "100"> <br><br>              
+      <hr>
+      <p><b>Vannak napi rutin tevékenységek (aktivitás), amik befolyásolják a BMR eredményét, ezek a következők:</b> </p>
+      <br>
+
+      <p><b>Ülő életmód:</b> ha egyáltalán nem sportolsz vagy minimális aktivitás jellemző.</p>
+      <p><b>Enyhén aktív életmód: </b> hetente 1-2x könnyebb testmozgást végzel.</p>
+      <p><b>Közepesen aktív életmód: </b> hetente 3-5x végzel könnyebb testmozgást.</p>
+      <p><b>Aktív életmód: </b> napi szinten sportolsz intenzíven.</p>
+      <p><b>Nagyon aktív életmód: </b> akár naponta többször is végzel nagyon intenzív testmozgást.</p>
+      <br><br>
+      </div>
+      <div class = col-sm-3>
+  </div>
+</div>          
+
+<div class = "container">
+  <div class = "row">
+
+    <div class = col-sm-6>
+       
+          <div class="dropdown">
+            <label for = "aktivitas" id = "legordulo" class="dropbtn">Fizikai aktivitásod: </label>
+              <select id = "tartalom"class="dropdown-content">
+                <option  value = "ulo">Ülő életmód</option>
+                <option  value = "enyhe">Enyhén aktív életmód</option>
+                <option  value = "kozepes">Közepesen aktív életmód</option>
+                <option  value = "aktiv">Aktív életmód</option>
+                <option  value = "naktiv">Nagyon aktív életmód</option>  
+              <select>
+          </div> 
+    </div>
+    <br><br>
+    <div class = "col-sm-6">        
+          <button onclick = "bmrSzamitas()" id = "szamitas" class = "szamitas">BMR kiszámítása</button>
+           
+          <p id = "noBmr"></p>   
+          <p id = "ferfiBmr"></p> 
+          <p id = "noeredmeny"></p>
+          <p id = ferfieredmeny></p>
+           <textarea id="eredmenyDoboz" rows="1" cols="35" readonly></textarea>  
+           <br> <br> 
+
+    </div>                           
+  </div>
+
+<hr>
+<br> 
+<div id = "alsoSzoveg">
+  <p>Ha kiszámoltad a napi bevitt  kalóriádat és szeretnéd megtudni, mennyi az a kalóriamennyiség, amivel még biztonságosan tudsz a 
+testsúlyodon változtatni, [itt] kiszámolhatod. </p>
+<p>Vissza a főoldalra [itt]</p>
+</div>
+</div>
+<br><br>
+
+
+  <h1>Fogyás Dátum Kalkulátor</h1>
+  <label for="leadniKivantKg">Leadni kívánt súly (kg):</label>
+  <input type="number" id="leadniKivantKg" required min="0" max="100">
+  <button id="idoGomb" onclick="idoKalkulacioGomb()">Kalkuláció</button>
+  <p>Az elérési dátum: <span id="datumEredmeny"></span></p>
+
+
+</body>
+</html>
