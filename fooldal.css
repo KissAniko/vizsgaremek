@@ -25,7 +25,7 @@
                 font-style: italic;
                 font-size: 16px;
                 width:140px;  
-                margin: 5px;  
+                margin: 25px;  
             }
             
               .betuk {                  
@@ -50,16 +50,16 @@
             }
             
             /* ezzel jelenik meg a legördülő ablak*/
-            /* .menuk:hover .content {                         
+             .menuk:hover .content {                         
               display: block;
-            } */
+            } 
             
             .content {                                        /* legördült ablak stílusa*/
                 display: none;
                 position: absolute;
                 background-color: #fff;
-               /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-               /* z-index: 1;*/
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                z-index:0;
             }
             .content a {
                 color: white;

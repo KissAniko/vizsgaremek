@@ -6,56 +6,92 @@
      <script defer src="kaloriatabla.js"></script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="kaloriatabla.CSS">
+     <link rel="stylesheet" href="kaloriatabla.smiley.css">
      <title>Ételek táblázat</title>
 </head>
 <body>
+      
+    <div class=" container">
+        <div class="row">
+          <div class="col-sm-2"></div>
+             <div class=body1>
+               <div class="smiley-tarolo1">
+                  <div class="fej1"></div>
+                  <div class="szem1-1"></div>
+                  <div class = "szemgolyo1-1"></div>
+                  <div class="szem1-2"></div>
+                  <div class = "szemgolyo1-2"></div>
+                  <div class="szaj1"></div>
+                  <div class= "gorbeszaj1-1"></div>
+                  <div class= "gorbeszaj1-2"></div>
+                  <div class= "gorbeszaj1-3"></div>
+                  <div class = "kanoc1"></div>
+                  <div class=" kanocto1"></div>
+               </div>        
+            </div>
+      
+
+            <div class = "menuk">
+               <button onmouseenter="mouseEnteredCalculator()" onmouseleave="mouseLeavedCalculator()">Kalóriatáblázat
+               <!-- belépés egérrel a kalóritáblázatot tartlamazó oldalakra -->
+               <div class="content" id="tableContent">
+                   <a href="kaloriatabla.html" target="_blank">Kalóriatáblázat</a>                  
+               </div>
+               </button>  
+
+               <button onmouseenter="mouseEnteredCalculator()" onmouseleave="mouseLeavedCalculator()">Kalkulátor
+               <!-- belépés egérrel a kalkulációt tartlamazó oldalakra -->
+               <div class="content" id="kalkulatorContent">
+                  <a href="BMI.html" target="_blank">BMI számláló</a>     
+                  <a href="BMR.html" target="_blank">BMR számláló</a>
+                  <a href="BMR szuk.html" target="_blank">BMR szükséglet</a>   
+               </div>
+              </button>  
+           </div> 
+    </div>
+</div>
+<hr>
 
 <h1><b><u>Ételek kalaóriatáblázata</u></b></h1>
-<br><br>
+
 
 <div class=" container">
   <div class="row">
     <div class="col-sm-0.5"></div>
     <div class="col-sm-11">
         <!-- <button id="loadDataButton">Adatok Betöltése</button> -->
-        <select name="valaszt" id="valaszt">
-            <option value="gabona">gabona</option>
-            <option value="allati">allati</option>
-        </select>
-        <button id="searchButton">Adatok Keresése</button>
 
-        
+       
+        <br><br>
+        <select  class= "tipuskivalasztogomb" name="valaszt" id="valaszt">          
+            <option value="gabona">Gabona</option>
+            <option value="allati">Állati eredetű</option>
+            <option value="huskeszitm">Húskészítmények</option>
+            <option value="teszta">Tészta</option>
+            <option value="pekaru">Pékáru</option>
+            <option value="zoldseg">Zöldség</option>
+            <option value="gyümölcs">Gyümölcs</option>
+            <option value="tejtermek">Tejtermék</option>
+            <option value="mag">Magvak</option>
+            <option value="zsirolaj">Zsírok-olajok</option>
+            <option value="udito">Üdítő italok</option>
+            <option value="alkoholos">Alkoholos italok</option>
+        </select>
+        <button class="adatkeresogomb" id="searchButton">Adatok Keresése</button>
+        <br><br><br>
+       
         <table id="adatok-táblázat">
             <!-- A betöltött adatok jelennek majd meg itt -->
         </table>
-    <h1>Keresés <span id="keresettTipus"></span> típusra.</h1>
-        <table id="keres-tablazat">   
+    <h1>Keresés <span  id="keresettTipus"></span> típusra.</h1>
+        <table  id="keres-tablazat">   
         </table>
         <script src="etel.js"></script>
-<hr>
-<!--  --------------------------------------------------------------------------------------------------- -->        
-
+<hr>        
 </div>
 <div class="col-sm-0.5"></div>
 
-    <script>
-        function openEl(evt, Name) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";  // elrejti azokat az elemeket, amiket nem szeretnénk megjeleníteni
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");  // eltávolítja az aktív osztályt, az inaktív elemekből
-              }
-              document.getElementById(Name).style.display = "block";
-              evt.currentTarget.className += " active"; // aktív vagy kiválasztott elem állapota
-              }
-                      
-          // "defaultOpen" elem aktiválása
-          document.getElementById("defaultOpen").click();
-                </script>
+    <script  src="kaloriatabla_formazas.js"></script>
         </div>
       </div>                
       </body>

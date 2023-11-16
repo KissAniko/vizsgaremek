@@ -8,9 +8,9 @@ body{
             body {
              
               font-family:Lucida;
-            font-style: italic;
-            font-size: 20px;
-            padding:20px;
+              font-style: italic;
+              font-size: 20px;
+              padding:20px;
             }
             
             
@@ -18,19 +18,19 @@ body{
             .tab {
                 text-align: center;
               float: left;
-               border: 1px solid #2c332d;  
+              /* border: 1px solid #2c332d;  *Í/
              /* background-color: rgba(89, 108, 107, 0.404);*/
-              width: 30%;
+              width: 10%;
               height: 1000px;
             }
             
-            /* A lapon belüli gombok stílusának beállítása */
-            .tab button {
+            /* A lapon belüli gombok stílusának beállítása  ( ez egy korábbi beállításhoz tartozott) */
+         /*   .tab button {
             
               text-align: center;
               display: block;
-              background-color: inherit;
-              color: black;
+              background-color:  #075b3b;
+              color:  #075b3b;
               padding: 22px 16px;
               width: 100%;
               border: none;
@@ -41,7 +41,7 @@ body{
               font-family:Lucida;
               font-style: italic;
               font-size: 20px;
-            }
+            }*/
             
             .container{
               text-align: center;
@@ -49,19 +49,19 @@ body{
             }
             /* Az egérmutató gombjainak háttérszínének módosítása*/
             .tab button:hover {
-              background-color: #D6EEEE;
+              background-color:  #67a28b;
             }
             
             /* aktív/aktuális "lap gomb" osztály */
             .tab button.active {
-              background-color: #D6EEEE;
+              background-color:  #075b3b;
             }
             
             /* A lap tartalmának stílusa */
             .tabcontent {
               float: left;
               padding: 0px 12px;
-              border: 1px solid rgb(23, 21, 21)ccc;
+              border: 1px solid  #075b3b;
               width: 70%;
               border-left: none;
               height: 300px;
@@ -73,10 +73,54 @@ body{
             
             th, td {
               text-align: left;
-              padding: 8px;
+              padding: 5px;
             }
             /* a kiemelt sorok színe */
             tr:nth-child(even) {
               background-color: #D6EEEE;
+              padding: 0px 20px;
             }
+
+
+            /*  ------------------------------GOMBOK------------------------  */
+
+
+            .adatkeresogomb, .tipuskivalasztogomb, button{
+              color:white;
+                background-color: rgb(42, 56, 42);
+                font-family:Lucida;
+                font-style: italic;
+                font-size: 16px;
+                width:140px;  
+                margin: 25px;  
+                
+            }
+
+             /* ezzel jelenik meg a legördülő ablak*/
+             .menuk:hover .content {                         
+              display: block;
+            } 
             
+            .content {                                        /* legördült ablak stílusa*/
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                z-index:0;
+            }
+            .content a {
+                color: white;
+                padding: 0px 30px;
+                text-decoration: none;                        /* leveszi a linkekről az aláhúzást */  
+                display: block;
+                background-color: rgb(42, 56, 42);
+              }
+              
+              .content a:hover {background-color: #274d45}  /* a legördült ablakokban kijelölt elemek  szine megváltozik*/
+              
+              .menuk{
+                text-align:right;   
+               
+            }
+
+           /*------------------------------------------------------------------*/
