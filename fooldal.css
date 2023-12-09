@@ -10,7 +10,7 @@
                 background-color:  rgb(166, 196, 166);
                 font-family:Lucida;
                 font-style: italic;
-                font-size: 18px;
+                font-size: 20px;
             }
           
             
@@ -70,6 +70,28 @@
               }
               
               .content a:hover {background-color: #274d45}  /* a legördült ablakokban kijelölt elemek  szine megváltozik*/
+
+              .footer-content{
+                background-color: black;
+                height:200px;
+          
+              }
+              hr{              
+             
+                border-style: dashed;  /*: szaggatott vonalstílus */
+                border-color: #2c473b;
+                border-width: 2px; /* Példa: 2 képpont vastagságú vonal */
+              }
+
+              .szoveg3{
+                color: rgb(42, 56, 42);
+                font-variant-emoji:emoji;
+                font-weight: bold;
+                font-size:20px;
+              }
+              h2{
+                text-shadow: 2px 2px 4px #888;   /* szürkés árnyék*/
+              }
               
             
             

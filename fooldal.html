@@ -8,9 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link rel="stylesheet" href="fooldal.css">
-    <link rel="stylesheet" href="smiley.css">
-   
-    <title>Főoldal</title>
+    <link rel="stylesheet" href="smiley.css">    
+    <link rel="stylesheet" href="">
+
+    <!-- google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link  href="https://fonts.googleapis.com/css2?family=Work+Sans:
+   wgth@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <!-- boxicons link-->
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
 </head>
 
 <body>  
@@ -117,15 +126,74 @@
         <p>Ez az oldal lehetőséget nyújt arra, hogy felmérd testsúlyod jelenlegi állapotát. A BMR kiszámolásával megtudhatod, hogy naponta hány kalóriát viszel be a szervezetedbe és mennyit égetsz el. Míg a BMI eredményed azt mutatja meg, hogy mennyi az a minimális kalóriamennyiség, amit be kell vinned a szervezetedbe ahhoz, hogy az egészséged megőrzése mellett el tudd érni a kitűzött célodat. Továbbá azt is kiszámolhatod, hogy a kívánt kilóktól mennyi idő alatt tudsz megszabadulni. </p>
          <p>Bizányára már számtalan cikket olvastál vagy hallottál a fogyókúrás módszerekről, s talán volt, hogy már elhatároztad magad, de még nem sikerült komolyabb eredményt elérned. Ha figyelemmel követed tanácsainkat, rövid időn belül magad is megtapasztalhatod a jelentős változást.</p>
         
-        <p>Első lépésként mindenképp olvasd el az információ menüben található  "Ezekre figyelj!" rovatot, ahol olyan hasznos információkat találsz, melyek buktatói lehetnek  a fogyókúrának, ugyanakkor előrelépési segítséget is nyújthanak. </p>
+        <p>Első lépésként mindenképp érdemes elolvasni az alábbi információkat, melyek további segítséget nyújthanak a sikeres fogyókúra érdekében. </p>
         <br><br><br>
-          <p>Az oldalt [itt] vagy a fenti menüsorban is megtalálod.</p>
-        
-    <br><br><br><br>
+    <hr>
     
   </div>
 </div> 
 
+<div class = "container">
+  <div class = "row">    
+      <div class = "col">
+<hr><br>
+    <div class="szoveg3">             
+
+<div id="lineContainer"></div>
+<script>
+  const lines = [ "- Vedd figyelembe, hogy mennyi az a testtömeg, ami normális idő és fogyás arányát tekintve, természetes úton, betegség nélkül elérhető.",
+      "- Figyelj a bevitt kalóriára, amelyhez tudod használni a kalóriatáblázatot is.",
+      "- A folyadékbevitel (tiszta víz) átlagosan 2-2,5 liter/nap",
+      "- A jojó effektust elkerülve ne akarj gyorsan lefogyni.  Az ajánlott fogyás mértéke maximum 1kg/hét.",
+      "- Ne koplalj, mert elsőször az izomból veszítesz, aztán  megjelenik a rosszullét és más egyéb kellemetlen tünet is.",
+      "- Figyelj a napi mozgásra, ami a fogyókúra  20-30 %-át teszi ki.",
+      "- A felborult, megváltozott körülmények miatt figyelj a pihensére is, amíg be nem áll a napi rutinod. "
+    ];
+
+  // Függvény a sorok késleltetett megjelenítéséhez
+  function displayLinesWithDelay() {
+          const lineContainer = document.getElementById("lineContainer");
+
+          // Végigiterálok a sorokon
+          lines.forEach((line, index) => {
+              // Idő beállítása  a megfelelő késleltetéssel
+              setTimeout(() => {
+                  // egy div elem létrehozása  sorral
+                  const div = document.createElement("div");
+                  div.textContent = line;
+
+                  // Konténerhez adom
+                  lineContainer.appendChild(div);
+
+                  // a nem utolsó sorhoz, gondolatjel hozzáadása
+                  if (index < lines.length - 1) {
+                      const br = document.createElement("br");
+                      lineContainer.appendChild(br);
+                  }
+              }, index * 3000); // 3000 ms (3 másodperc) késleltetés minden sor után
+          });
+        }
+
+      // Függvény meghívása
+      displayLinesWithDelay();
+  </script>
+
+  </div>       
+      </div>
+      <div class = "col">         
+       <hr>
+      </div>
+    </div><br><hr>
+  </div>
+</div>
+
+<div class = "container">
+  <div class = "row">    
+      <div class = "col-md-12">              
+       <br><br>       
+<footer>
+<div class="footer-content"></div>
+</footer>
 </body>
 </html>
 
