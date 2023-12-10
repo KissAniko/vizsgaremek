@@ -113,6 +113,28 @@
               transition: opacity 1s ease-in-out; /* Átlátszóság átmenet */
           }
 
-          /*------------------------------------------------*/
+          /*---------------------gyümölcsök---------------------------*/
 
-          
+          .gyumi {
+            margin: 0;
+            overflow: hidden;
+          }
+        
+          #container5 {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+          }
+        
+          .falling-fruit {
+            position: absolute;
+            pointer-events: none;
+            animation: fall linear forwards;
+          }
+        
+          @keyframes fall {
+            to {
+              transform: translateY(2000%);
+              opacity: 0;
+            }
+          }
