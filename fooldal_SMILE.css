@@ -1,0 +1,172 @@
+
+body{
+
+	background-color:   rgb(166, 196, 166);
+}.body1{  
+                    justify-content: center;
+                    align-items: center;                  
+                    /* width: 80vw; */
+                    /* min-height: 100vh; */                 
+                    margin-top:-15px;
+                    margin-left:-15px;
+                    background-color:   rgb(166, 196, 166);
+										margin:200px;
+                                                     
+                  }
+                  
+                  .smiley-tarolo1 {
+                    width: 100px;
+                    height: 100px;
+                    /*border-bottom: 2px solid black;*/
+                    position:relative;
+                    margin:20px;      
+                  }
+                  
+                  .smiley.tarolo1{
+                    margin: 20px;
+                  }
+                  
+                  
+                  
+                  .fej1{
+                    justify-content: center; 
+                    top: 50px;
+                    left: 50px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: #16201c;
+                  }
+                  
+                  .szem1-1, .szem1-2{
+                    justify-content: center; 
+                    position:absolute;                
+                    width:18px;
+                    height:25px;
+                    background-color: White;
+                    border-radius: 50%;  
+                  }
+                  
+                  .szem1-1{
+                    transform: rotate(-15deg); 
+                    left:25px;
+                    top:35px;
+                  }
+                  
+                  .szem1-2{  
+                    transform: rotate(-25deg); 
+                    left:55px;
+                    top:23px;
+                  }
+                  
+                 
+                  
+                  .szemgolyo1-1, .szemgolyo1-2{
+                    justify-content: center; 
+                    position:absolute;              
+                    width:12px;
+                    height:15px;
+                    background-color:#355348;
+                    border-radius: 50%; 
+                  }
+                  
+                  .szemgolyo1-1{
+                    transform: rotate(-15deg); /* Elforgatás 15 fokban másik irány (\\\)*/  
+                    left:22px;
+                    top:40px;
+                  }
+                  
+                  .szemgolyo1-2{  
+                    left:54px;
+                    top:29px;
+                    transform: rotate(-15deg);  
+                  }
+                  
+                  
+                  
+                  /*.szem:nth-child(2){
+                    left: 160px;
+                  }  */
+                  
+									.szaj2{
+										position:absolute;
+										width:25px;                
+										/* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+										border-radius: 50%;
+										border-bottom:40px solid white;
+										transform: rotate(80deg);
+										left:45px;
+										top:50px;
+									}
+									
+									.szaj2-2{
+										position:absolute;                
+										width:25px;
+										height:43px;
+										background-color:#16201c;
+										border-radius:50%;
+										left:42px;
+										top:42px;
+										transform: rotate(75deg); 
+									}
+                 
+                  
+                  .kanoc1{
+                    position:absolute;
+                    width:7px;                
+                    /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+                    border-radius: 20%;
+                    border-bottom:40px solid rgb(80, 58, 28); 
+                  }
+                  .kanoc1{
+                    transform: rotate(-36deg); 
+                    left:5px;
+                    top:-30px;
+                  }
+                  
+                  body {
+                    margin: 0;
+                    overflow: hidden;
+                }    
+                  
+                  .kanocto1, .kanocto2{
+                    position:absolute;
+                    width:30px;                
+                    /* border-radius: 0% 0% 70% 70%;   Így is lehet ! */
+                    border-radius: 50%;
+                    border-bottom:20px solid #16201c;
+                    transform: rotate(-30deg);
+                    left:5px;
+                    top:-1px;
+                  }
+                  
+                  .kanocto1{
+                    transform: rotate(-30deg); 
+                    left:5px;
+                    top:-1px;
+                  }
+                                                 
+                  .csillag1{
+                    position: relative;
+                    justify-content: center;
+                    font-size: 400px;
+                    left:-43px;
+                    top:-148px;
+                  }
+                    
+                  #image-container {
+                    position: fixed;
+                    top: -100%; /* Kezdetben az image-container a felső peremen kívül helyezkedik el */
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #f0f0f0; /* Opcionális háttérszín a kép beúsztatása előtt */
+                    transition: top 0.5s ease-in-out; /* Átmenet az animációhoz */
+                }
+        
+                #image {
+                    width: 100%;
+                    height: auto;
+                    max-height: 100vh;
+                } 
+                  

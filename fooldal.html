@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link rel="stylesheet" href="fooldal.css">
     <link rel="stylesheet" href="smiley.css">    
-    <link rel="stylesheet" href="">
 
     <!-- google fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +20,10 @@
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   
 </head>
+<!-- ---------------------------------------------------------------------------------->
+
+<!-- ----------------------------------------------------------------------------->
+
 
 <body>  
     
@@ -37,7 +40,7 @@
     <button  onclick="jelszo()" title="Jelszó">Elfelejtett jelszó</button>  
   </div>
 
-    <hr>
+    
 
     <div class="container">
                 <div class="row">
@@ -136,7 +139,7 @@
 <div class = "container">
   <div class = "row">    
       <div class = "col">
-<hr><br>
+<br>
     <div class="szoveg3">             
 
 <div id="lineContainer"></div>
@@ -145,7 +148,7 @@
       "- Figyelj a bevitt kalóriára, amelyhez tudod használni a kalóriatáblázatot is.",
       "- A folyadékbevitel (tiszta víz) átlagosan 2-2,5 liter/nap",
       "- A jojó effektust elkerülve ne akarj gyorsan lefogyni.  Az ajánlott fogyás mértéke maximum 1kg/hét.",
-      "- Ne koplalj, mert elsőször az izomból veszítesz, aztán  megjelenik a rosszullét és más egyéb kellemetlen tünet is.",
+      "- Ne koplalj, mert legelőször az izomból veszítesz, ezt követően pedig megjelenik a rosszullét és más egyéb kellemetlen tünet.",
       "- Figyelj a napi mozgásra, ami a fogyókúra  20-30 %-át teszi ki.",
       "- A felborult, megváltozott körülmények miatt figyelj a pihensére is, amíg be nem áll a napi rutinod. "
     ];
@@ -177,11 +180,37 @@
       // Függvény meghívása
       displayLinesWithDelay();
   </script>
+<br>
 
+<p class="sor5">Sikeres fogyást és kitartást kívánok!  <div class="smiley-container">
+  <div class="smiley">&#127939;</div>
+  <div class="smiley">&#128692;</div>
+  <div class="smiley">&#127946;</div> 
+  <div class="smiley">&#127938;</div> 
+  <div class="smiley">&#128675;</div> 
+  <div class="smiley">&#127947;</div>  </p>
+
+  <script>
+ document.addEventListener("DOMContentLoaded", function() {
+            const smileys = document.querySelectorAll(".smiley");
+
+            // végigiterálok a mosolygókon
+            smileys.forEach((smiley, index) => {
+                // időzítő beállítása
+                setTimeout(() => {
+                    smiley.style.opacity = 1; //  átlátszóságot beállítása 1-re, hogy megjelenjenek
+                }, index * 3000); // 3000 ms (3 másodperc) késleltetés minden mosolygó után
+            });
+        });
+
+  </script>
+</div>
   </div>       
       </div>
-      <div class = "col">         
-       <hr>
+      <div class = "col"> 
+        <img src="projekt smile 1.png" alt="mosolygós smile" class="rezgosmile"> 
+
+        
       </div>
     </div><br><hr>
   </div>
@@ -193,7 +222,11 @@
        <br><br>       
 <footer>
 <div class="footer-content"></div>
+
 </footer>
+
+
+
 </body>
 </html>
 

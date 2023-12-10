@@ -93,6 +93,26 @@
                 text-shadow: 2px 2px 4px #888;   /* szürkés árnyék*/
               }
               
+            .sor5{
+              color: rgb(42, 56, 42);            
+              font-size:18px;
+              font-family:Lucida;
+              font-style: italic;
+             font-weight:lighter;
+
+            }
             
-            
-            
+            .smiley-container {
+              display: flex;
+          }
+  
+          .smiley {
+              font-size: 36px;
+              margin-right: 10px;
+              opacity: 0; /* Kezdeti átlátszóság, hogy ne látszanak */
+              transition: opacity 1s ease-in-out; /* Átlátszóság átmenet */
+          }
+
+          /*------------------------------------------------*/
+
+          
