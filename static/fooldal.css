@@ -77,10 +77,11 @@
           
               }
               hr{              
-             
-                border-style: dashed;  /*: szaggatott vonalstílus */
-                border-color: #2c473b;
-                border-width: 2px; /* Példa: 2 képpont vastagságú vonal */
+            /* 
+                border-style: dashed;  : szaggatott vonalstílus */
+               border-color: #2c473b;  
+                border-width: 3px;    /*   5 képpont vastagságú vonal 
+                
               }
 
               .szoveg3{
@@ -113,28 +114,9 @@
               transition: opacity 1s ease-in-out; /* Átlátszóság átmenet */
           }
 
+          .gondolatjelesSzoveg{
+            font-weight: bold;
+          }
           /*---------------------gyümölcsök---------------------------*/
 
-          .gyumi {
-            margin: 0;
-            overflow: hidden;
-          }
-        
-          #container5 {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-          }
-        
-          .falling-fruit {
-            position: absolute;
-            pointer-events: none;
-            animation: fall linear forwards;
-          }
-        
-          @keyframes fall {
-            to {
-              transform: translateY(2000%);
-              opacity: 0;
-            }
-          }
+          

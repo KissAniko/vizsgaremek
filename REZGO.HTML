@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/REZGO.css">
+  <title>REZGO</title>
+  <style>
+    /* Add your CSS styles here */
+    .container {
+      display: flex;
+    }
+
+    .gyumi {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #container5 {
+      position: relative;
+      width: 50vw;
+      height: 100vh;
+    }
+
+    .falling-fruit {
+      position: absolute;
+      pointer-events: none;
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(2000%);
+        opacity: 0;
+      }
+    }
+
+    .rezgosmile {
+      width: 20vw;
+      height: 40vh;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .rezgosmile.enlarged {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const container = document.getElementById('container5');
+      const image = document.getElementById('rezgosmile');
+
+      function createFruit() {
+        const fruits = ['🍎', '🍌', '🍇', '🍓', '🍊', '🍑', '🍍', '🍉', '🍒','🍈',
+         'Pihenés', 'Vízfogyasztás', 'Futás', 'Fehérje', 'A-vitamin', 'B-vitamin', 'C-vitamin',
+          'D-vitamin', 'E-vitamin','K-vitamin', 'Mg', 'Ca', 'K', 'Fe', 'Alvás', 'Kalóriaszámlálás', 
+          'Gyaloglás', 'Úszás', 'Kevés szénhidrát', 'Diéta'];
+        const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+
+        const fruitElement = document.createElement('div');
+        fruitElement.className = 'falling-fruit';
+        fruitElement.style.left = `${Math.random() * 50}vw`; // Adjust left position
+        fruitElement.innerHTML = randomFruit;
+
+        container.appendChild(fruitElement);
+
+        setTimeout(() => {
+          fruitElement.style.animationDuration = `${Math.random() * 2 + 3}s`;
+          fruitElement.style.left = `${Math.random() * 50}vw`; // Adjust left position
+          fruitElement.style.opacity = 10;
+          fruitElement.style.transform = 'translateY(300%)';
+        }, 1);
+      }
+
+      container.addEventListener('click', createFruit);
+
+      image.addEventListener('mouseover', function() {
+        image.classList.add('enlarged');
+        createFruit();
+      });
+
+      image.addEventListener('mouseout', function() {
+        image.classList.remove('enlarged');
+      });
+    });
+  </script>
+  
+  <div class="container">
+    <div class="gyumi" id="container5"></div>  
+    <img id="rezgosmile" class="rezgosmile" src="projekt smile 1.png" alt="mosolygós smile">   
+  </div>     
+</body>
+</html>
