@@ -223,22 +223,22 @@ Katt
               function createFruit() {
                 const fruits = ['🍎', '🍌', '🍇', '🍓', '🍊', '🍑', '🍍', '🍉', '🍒','🍈',
                  'Pihenés', 'Vízfogyasztás', 'Futás', 'Fehérje', 'A-vitamin', 'B-vitamin', 'C-vitamin',
-                  'D-vitamin', 'E-vitamin','K-vitamin', 'Mg', 'Ca', 'K', 'Fe', 'Alvás', 'Kalóriaszámlálás', 
+                  'D-vitamin', 'E-vitamin','K-vitamin', 'Ásványi anyagok', 'Alvás', 'Kalóriaszámlálás', 
                   'Gyaloglás', 'Úszás', 'Kevés szénhidrát', 'Diéta'];
                 const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
         
                 const fruitElement = document.createElement('div');
                 fruitElement.className = 'falling-fruit';
-                fruitElement.style.left = `${Math.random() * 80}vw`; // bal pozíció
+              
                 fruitElement.innerHTML = randomFruit;
         
                 container.appendChild(fruitElement);
         
                 setTimeout(() => {
-                  fruitElement.style.animationDuration = `${Math.random() * 2 + 3}s`;
+                  fruitElement.style.animationDuration = `${Math.random() * 3 + 3}s`;
                   fruitElement.style.left = `${Math.random() * 10}vw`; 
-                  fruitElement.style.opacity = 10;
-                  fruitElement.style.transform = 'translateY(300%)';
+                  fruitElement.style.opacity = 1;
+                  fruitElement.style.transform = 'translateY(100%)';
                 }, 1);
               }
         
@@ -246,7 +246,7 @@ Katt
         
               image.addEventListener('mouseover', function() {
                 image.classList.add('enlarged');
-                createFruit(20);
+                createFruit();
               });
         
               image.addEventListener('mouseout', function() {
