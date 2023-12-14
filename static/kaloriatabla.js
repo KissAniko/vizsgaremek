@@ -14,7 +14,7 @@ const lista = [];
 
 
 window.addEventListener('load', ()=>{
-fetch('Ételadatok.csv')
+fetch('static/Ételadatok.csv')
     .then(response => response.text())
     .then(data => {
       // Adatok feldolgozása és HTML táblázattá alakítása

@@ -118,5 +118,14 @@
             font-weight: bold;
           }
          
+          @media screen and (min-width: 600px){
+            .betuk{
+              display:flex;
 
+            }
+            .conatiner3{
+              display:flex;
+            }
+
+          }
           
