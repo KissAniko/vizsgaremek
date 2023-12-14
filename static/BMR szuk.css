@@ -17,6 +17,9 @@ body{
               font-size: 20px;
               
             }
+            h2{
+              text-shadow: 2px 2px 4px #888;
+            }
             
              #tomeg, #magas, #elet, #eredmenyDoboz{
               font-family:Lucida;

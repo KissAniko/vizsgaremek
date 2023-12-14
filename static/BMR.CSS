@@ -22,6 +22,9 @@ body{
               font-family:Lucida;
               font-style: italic;
             }
+            h2{
+              text-shadow: 2px 2px 4px #888;
+            }
             h4{
               font-family:Lucida;
               font-style: italic;
