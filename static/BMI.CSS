@@ -47,6 +47,11 @@ body{
                 font-size: 18px;
                 
               }
+              p{
+                font-family:Lucida;
+                font-style: italic;
+                font-size:20px;
+              }
               h2{
                 font-family:Lucida;
                 font-style: italic;
@@ -62,3 +67,10 @@ body{
                 background-color: blue; 
                 border-radius: 50%; 
               }  */
+
+              .nem-label{
+                margin-left: 8px;
+                font-family:Lucida;
+                  font-style: italic;
+                  font-size:20px;
+              }

@@ -80,7 +80,7 @@
             /* 
                 border-style: dashed;  : szaggatott vonalstílus */
                border-color: #2c473b;  
-                border-width: 3px;    /*   5 képpont vastagságú vonal 
+                border-width: 3px;    /*   5 képpont vastagságú vonal */
                 
               }
 
@@ -117,6 +117,6 @@
           .gondolatjelesSzoveg{
             font-weight: bold;
           }
-          /*---------------------gyümölcsök---------------------------*/
+         
 
           

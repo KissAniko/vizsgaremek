@@ -14,14 +14,14 @@ body{
             p, h2, h3, pre, li{
               font-family:Lucida;
               font-style: italic;
-              font-size: 18px;
+              font-size: 20px;
               
             }
             
              #tomeg, #magas, #elet, #eredmenyDoboz{
               font-family:Lucida;
               font-style: italic;
-              font-size: 18px;
+              font-size: 20px;
             }
             
             #szamitas{
@@ -46,4 +46,15 @@ body{
               padding:20px;
             }
             
+            .nem-label{
+              margin-left: 8px;
+            font-family:Lucida;
+              font-style: italic;
+              font-size:20px;
+            }
+            label{
+              font-family:Lucida;
+              font-style: italic;
+              font-size:20px;
+            }
             

@@ -2,7 +2,7 @@ body{
                 background-color: rgb(166, 196, 166);
             }
             
-            #test, #mag, #eletkor, #fizikaiakt{
+            #test, #mag, #eletkor, #fizikaiakt, #leadniKivantKg, #idoGomb{
               width:110px;
               font-family:Lucida;
               font-style: italic;
@@ -15,10 +15,10 @@ body{
             p, pre, h3{
               font-family:Lucida;
               font-style: italic;
-              font-size: 18px;
+              font-size: 20px;
                    
             }
-            h2{
+            h1, h2{
               font-family:Lucida;
               font-style: italic;
             }
@@ -29,7 +29,7 @@ body{
             }
             
             
-             #tomeg, #magas, #elet, #eredmenyDoboz, #alsoszoveg{
+             #tomeg, #magas, #elet, #eredmenyDoboz, #alsoszoveg, #leadniKivantKg{
               font-family:Lucida;
               font-style: italic;
               font-size: 18px;
@@ -118,6 +118,11 @@ body{
             }
             
             
-            
+          .nem-label{
+            margin-left: 8px;
+            font-family:Lucida;
+              font-style: italic;
+              font-size:20px;
+          }  
             
             

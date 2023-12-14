@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
     <script src = "static/BMR.js"></script> 
+    <script src="static/BMR_legordulomenuk.js"></script>
     <script src = "static/BMR_idoScript.js"></script> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -15,43 +16,48 @@
 <body>
     
 
+<hr>
+
 <div class = "container">
   <div class = "row">
-    <div class = col-sm-3></div>
-      <div class = col-sm-6>
+    <div class = col-sm-2></div>
+      <div class = col-sm-8>
 
         <h2><b><u>Mi a BMR?</u></b></h2>
         <br>
           <p>A BMR, vagyis a Basal Metabolic Rate alapanyagcserét jelent. Ezen az oldalon kiszámolhatod, azt az  energiamennyiséget  vagyis kalóriát,  amit a szervezet pihenés 
        (tehát mindenfajta fizikai megterhelés nélkül) közben az élettani funkcióinak fenntartása miatt éget el. Ez a mennyiség teszi ki a 
        napi kalóriaszükségletünk 60-70%-át.</p>
-       <p>Továbbá azt is megtudhatod, miután beírtad a leadni kívánt kiló mennyiségét, hogy mennyi idő alatt tudsz tőle  megszabadulni  normál körülmények és fogyókúra esetén. </p>
+       <p>Továbbá azt is megtudhatod, miután beírtad a leadni kívánt kiló mennyiségét, hogy mennyi idő alatt tudsz tőle megszabadulni, ha napi középszintű testmozgást végzel. </p>
 
        <h4><p><b>Adatok:</b></p></h4>
           <br>
+         <label>Válassz nemet:</label>
+         <span class="nem-label" >nő</span>
+          <button  id = "no"  onclick="setNem('no')" <span style='font-size:20px;'>&#128105;</span> </button> 
+          <span class="nem-label">férfi</span> 
          
-          <button  id = "no"  onclick="setNem('no')" <span style='font-size:20px;'>&#128105;</span> </button>  
           <button  id = "ferfi" onclick="setNem('ferfi')" <span style='font-size:20px;'>&#128104;</span> </button>
              
           <br><br>
-          <label for="testtomeg" id = "tomeg">(Beírható érték 40 - 150 között)</label>              
+          <label for="testtomeg" id = "tomeg">(Testtömeg 40 - 150 között)</label>              
           <input type="number"   id = "test"  placeholder = "Testtömeg /kg" min = "40" max = "150" >  <br><br> <!-- placeholder = helyőrző szöveg -->
-          <label for="magassag"  id = "magas">(Beírható érték  100 - 220 között)</label>          
+          <label for="magassag"  id = "magas">(Magasság  100 - 220 között)</label>          
           <input type="number"   id = "mag"   placeholder = "Magasság /cm" min = "100" max = "220">  <br><br> 
-          <label for="eletkor"   id = "elet">(Beírható érték  18 - 100 között)</label> 
+          <label for="eletkor"   id = "elet">(Életkor  18 - 100 között)</label> 
           <input type="number"   id = "eletkor" placeholder = "Életkor /év" min = "18" max = "100"> <br><br>              
       <hr>
-      <p><b>Vannak napi rutin tevékenységek (aktivitás), amik befolyásolják a BMR eredményét, ezek a következők:</b> </p>
+      <p><b>Válassz a napi, fizikai aktivitások közül, amelyek befolyásolják a BMR eredményét:</b> </p>
       <br>
 
       <p><b>Ülő életmód:</b> ha egyáltalán nem sportolsz vagy minimális aktivitás jellemző.</p>
-      <p><b>Enyhén aktív életmód: </b> hetente 1-2x könnyebb testmozgást végzel.</p>
-      <p><b>Közepesen aktív életmód: </b> hetente 3-5x végzel könnyebb testmozgást.</p>
+      <p><b>Enyhén aktív életmód: </b> hetente 1x-2x végzel könnyebb testmozgást.</p>
+      <p><b>Közepesen aktív életmód: </b> hetente 3x-5x végzel könnyebb testmozgást.</p>
       <p><b>Aktív életmód: </b> napi szinten sportolsz intenzíven.</p>
-      <p><b>Nagyon aktív életmód: </b> akár naponta többször is végzel nagyon intenzív testmozgást.</p>
+      <p><b>Nagyon aktív életmód: </b>  naponta többször is végzel nagyon intenzív testmozgást.</p>
       <br><br>
       </div>
-      <div class = col-sm-3>
+      <div class = col-sm-2>
   </div>
 </div>          
 
@@ -87,21 +93,18 @@
 
 <hr>
 <br> 
-<div id = "alsoSzoveg">
-  <p>Ha kiszámoltad a napi bevitt  kalóriádat és szeretnéd megtudni, mennyi az a kalóriamennyiség, amivel még biztonságosan tudsz a 
-testsúlyodon változtatni, [itt] kiszámolhatod. </p>
-<p>Vissza a főoldalra [itt]</p>
-</div>
-</div>
-<br><br>
 
-
-  <h1>Fogyás Dátum Kalkulátor</h1>
-  <label for="leadniKivantKg">Leadni kívánt súly (kg):</label>
-  <input type="number" id="leadniKivantKg" required min="0" max="100">
+  <h1><b><u>Fogyás-dátumkalkulátor</u></b></h1>
+  <br><br>
+  <label for="leadniKivantKg">Leadni kívánt súly 0-100 között (kg):</label>
+  <input type="number" id="leadniKivantKg" placeholder="Lead/kg" min="0" max="100">
   <button id="idoGomb" onclick="idoKalkulacioGomb()">Kalkuláció</button>
-  <p>Az elérési dátum: <span id="datumEredmeny"></span></p>
+  <br><br>
+  <p>Az elérési dátum: <u><b> <span style="font-size:25px;"  id="datumEredmeny"></b></u></span></p>
 
+  <br><hr><br>
+<p>Vissza a főoldalra katt <a href="index.html" target="_blank">[ide]</a></p>
 
+<br>
 </body>
 </html>

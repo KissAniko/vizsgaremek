@@ -1,5 +1,5 @@
-let nem = 'no';
-let eletmod = 'ulo';
+let nem = '';
+let eletmod = '';
 
 function setNem(selectedNem) {
     nem = selectedNem;

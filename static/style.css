@@ -1,38 +1,39 @@
- /* Add your CSS styles here */
- .container {
+
+.container {
                     display: flex;
-                  }
-              
-                  .gyumi {
+                }
+                
+                .gyumi {
                     margin: 0;
                     overflow: hidden;
-                  }
-              
-                  #container5 {
+                }
+                
+                #container5 {
                     position: relative;
                     width: 50vw;
                     height: 100vh;
-                  }
-              
-                  .falling-fruit {
+                }
+                
+                .falling-fruit {
                     position: absolute;
                     pointer-events: none;
                     animation: fall linear forwards;
-                  }
-              
-                  @keyframes fall {
+                }
+                
+                @keyframes fall {
                     to {
-                      transform: translateY(2000%);
-                      opacity: 0;
+                        transform: translateY(2000%);
+                        opacity: 0;
                     }
-                  }
-              
-                  .rezgosmile {
+                }
+                
+                .rezgosmile {
                     width: 20vw;
                     height: 40vh;
                     transition: transform 0.5s ease-in-out;
-                  }
-              
-                  .rezgosmile.enlarged {
+                }
+                
+                .rezgosmile.enlarged {
                     transform: scale(1.2);
-                  }
+                }
+                

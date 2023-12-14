@@ -1,8 +1,8 @@
 function idoKalkulacioGomb() {
                 const leadniKivantKg = parseFloat(document.getElementById("leadniKivantKg").value);
                // const kaloriaPerKg = 7700; // Kalóriák száma 1 kg súlycsökkenéshez
-                const leadniKivantkaloria = leadniKivantKg * 7700;
-                const napiKaloriaDeficit = 500;// Példa: napi 500 kalóriás deficit
+                
+                const napiKaloriaDeficit = 1000; //  napi 1000 kalóriás deficit, ami heti 1 kg-nak felel meg 
 
                 
                 if (leadniKivantKg < 0 || leadniKivantKg > 100 ) {

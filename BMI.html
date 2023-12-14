@@ -29,16 +29,17 @@
               <p>Számítás után az alábbi táblázatban látható a  nő és férfi BMI, amik egy megközelítő értéket mutatnak. A táblázatban megnézheted, melyik értékintervallum számodra a legideálisabb. Ha az ideális súlyhoz képest túl nagy az eltérés, érdemes felkeresni a háziorvost vagy egy dietetikus tanácsadót, aki bővebb információval segíthet.</p>  
           </div>
           <hr><br>
-          <label for="neme" id = "neme">Neme:</label>
-  
-          <button  id = "no"  onclick="setNem('no')" <span style='font-size:15px;'>&#128105;</span> </button>  
-          <button  id = "ferfi" onclick="setNem('ferfi')" <span style='font-size:15px;'>&#128104;</span> </button> 
+          <label for="neme" id = "neme">Válassz nemet:</label>
+  <span class="nem-label">nő</span>
+          <button  id = "no"  onclick="setNem('no')" <span style='font-size:20px;'>&#128105;</span> </button>  
+          <span class="nem-label">férfi</span>
+          <button  id = "ferfi" onclick="setNem('ferfi')" <span style='font-size:20px;'>&#128104;</span> </button> 
           <br><br>
-          <label for="testtomeg" id = "tomeg">(Beírható érték 40 - 150 között)</label>              
+          <label for="testtomeg" id = "tomeg">(Testtömeg 40 - 150   / kg között)</label>              
           <input type="number" id = "test"  placeholder = "Testtömeg /kg" min = "40" max = "150" >  <br><br> <!-- placeholder = helyőrző szöveg -->
-          <label for="magassag" id = "magas">(Beírható érték  100 - 220 között)</label>          
+          <label for="magassag" id = "magas">(Magasság  100 - 220   /cm között)</label>          
           <input type="number" id = "mag"   placeholder = "Magasság /cm" min = "100" max = "220">  <br><br> 
-          <label for="eletkor" id = "elet">(Beírható érték  18 - 100 között)</label> 
+          <label for="eletkor" id = "elet">(Életkor   18 - 100 között)</label> 
           <input type="number" id = "eletkor" placeholder = "Életkor /év" min = "18" max = "100"> <br><br>    
           <button onclick = "bmiSzamitas()" id = "szamitas">BMI kiszámítása</button>
 
@@ -179,6 +180,8 @@
     </div>
       <div class = "col-sm-6"></div>
 </div>
-
+<br><hr><br>
+<p>Vissza a főoldalra katt<a href="index.html" target="_blank"> [ide]</a></p>
+<br>
 </body>
 </html>

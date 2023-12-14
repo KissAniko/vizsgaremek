@@ -5,10 +5,15 @@
     
     <!-- defer = a js fájl akkor tölt be, ha már minden más betöltött -->
     <script defer src="static/legordulomenuk.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link rel="stylesheet" href="static/fooldal.css">
-    <link rel="stylesheet" href="static/smiley.css">    
+    <link rel="stylesheet" href="static/smiley.css"> 
+    <link rel="stylesheet" href="static/style.css">
+       
+    </head>
+       
 
     <!-- google fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,46 +26,7 @@
   
 </head>
 
-<style>
-  /* Add your CSS styles here */
-  .container {
-    display: flex;
-  }
 
-  .gyumi {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  #container5 {
-    position: relative;
-    width: 50vw;
-    height: 100vh;
-  }
-
-  .falling-fruit {
-    position: absolute;
-    pointer-events: none;
-    animation: fall linear forwards;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(2000%);
-      opacity: 0;
-    }
-  }
-
-  .rezgosmile {
-    width: 20vw;
-    height: 40vh;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .rezgosmile.enlarged {
-    transform: scale(1.2);
-  }
-</style>
 <body>  
     
       <div class="regisztracios_sor">
@@ -81,7 +47,7 @@
     <div class="container">
                 <div class="row">
                                 <div class="col-sm-1"></div>
-                                <div class="col-sm-10">                        
+                                <div class="col-sm-12">                        
     <div class = "betuk">  
         Kalória-B
 
@@ -209,7 +175,7 @@
                       const br = document.createElement("br");
                       lineContainer.appendChild(br);
                   }
-              }, index * 3000); // 3000 ms (3 másodperc) késleltetés minden sor után
+              }, index * 2500); // 2500 ms (2,5 másodperc) késleltetés minden sor után
           });
         }
 
@@ -243,8 +209,12 @@
 </div>
   </div>       
       </div>
-      <div class = "col"> 
+
+Katt 
+
+      <div class = "col-md-6"> 
         <div class="container">
+         
           <script>
             document.addEventListener('DOMContentLoaded', function () {
               const container = document.getElementById('container5');
@@ -259,14 +229,14 @@
         
                 const fruitElement = document.createElement('div');
                 fruitElement.className = 'falling-fruit';
-                fruitElement.style.left = `${Math.random() * 50}vw`; // Adjust left position
+                fruitElement.style.left = `${Math.random() * 80}vw`; // bal pozíció
                 fruitElement.innerHTML = randomFruit;
         
                 container.appendChild(fruitElement);
         
                 setTimeout(() => {
                   fruitElement.style.animationDuration = `${Math.random() * 2 + 3}s`;
-                  fruitElement.style.left = `${Math.random() * 50}vw`; // Adjust left position
+                  fruitElement.style.left = `${Math.random() * 10}vw`; 
                   fruitElement.style.opacity = 10;
                   fruitElement.style.transform = 'translateY(300%)';
                 }, 1);
@@ -276,11 +246,12 @@
         
               image.addEventListener('mouseover', function() {
                 image.classList.add('enlarged');
-                createFruit();
+                createFruit(20);
               });
         
               image.addEventListener('mouseout', function() {
                 image.classList.remove('enlarged');
+                createFruits(20);
               });
             });
           </script>
@@ -293,17 +264,6 @@
     </div><br><hr>
   </div>
 </div>
-
-<div class = "container">
-  <div class = "row">    
-      <div class = "col-md-12">              
-       <br><br>       
-<footer>
-<div class="footer-content"></div>
-
-</footer>
-
-
-
+<hr>
 </body>
 </html>

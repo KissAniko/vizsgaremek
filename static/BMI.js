@@ -1,9 +1,21 @@
 
-
+let nem = '';
+let eletmod = '';
 
 let valasztottNem = "no";
-function setNem (nem){
-  valasztottNem = nem;
+
+function setNem(selectedNem) {
+  nem = selectedNem;
+
+
+  if (nem === 'no'){
+      document.getElementById("no").style.backgroundColor = "#075b3b";
+      document.getElementById("ferfi").style.backgroundColor = "white";
+  }
+      if (nem === 'ferfi'){
+          document.getElementById("ferfi").style.backgroundColor = "#075b3b";
+          document.getElementById("no").style.backgroundColor = "white";    
+      }        
 }
 
 function bmiSzamitas(){
@@ -24,6 +36,16 @@ if (isNaN(testtomeg) || isNaN(magassag) || magassag < 100 ||  magassag > 220  ||
     alert("Kérem, adjon meg olyan valós értéket, amely a megadott intervallumon belül van!");
     return;
 }
+
+if (testtomeg %1 !== 0 || magassag %1 !== 0 || eletkor %1 !== 0){
+  alert('Csak egész számot adhatsz meg!')
+  return;
+}
+if (!nem) {
+  alert('Kérlek válassz nemet!');
+  return;
+}
+
 
   let eletkorE = eletkor/eletkor;
   let magassagM = magassag / 100;

@@ -26,7 +26,7 @@ getActivity()
 
     if (isNaN(testtomeg) || isNaN(magassag) || isNaN(eletkor)) {
         alert('Kérlek töltsd ki az összes mezőt!');
-        //document.getElementById('eredmenyDoboz').textContent = 'Kérlek töltsd ki az összes mezőt!';
+        document.getElementById('eredmenyDoboz').textContent = 'Kérlek töltsd ki az összes mezőt!';
         return;        
     }
 
